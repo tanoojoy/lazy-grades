@@ -15,7 +15,7 @@ export default function Riddle() {
             <br/>
             <span className="block mt-2 font-semibold">Xibu jt uif psjhjobm nfttbhf?</span>
           </p>
-          <p className="text-xs mt-6 opacity-70">Once you find the solution. Just visit it as subdomain.</p>
+          <p className="text-xs mt-6 opacity-70">Once you find the solution. Just visit it as subdomain. HINT: ASCII</p>
         </div>
       </div>
     </>
