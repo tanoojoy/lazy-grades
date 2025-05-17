@@ -38,7 +38,7 @@ export default function Riddle() {
           <p className="mb-6 text-sm md:text-base whitespace-pre-wrap glitchy obscured">
             {encoded}
           </p>
-          <p className="text-xs mt-6 opacity-70 italic">Hover to reveal... but only if you’re meant to know 🤫. Hint: Zeus</p>
+          <p className="text-xs mt-6 opacity-70 italic">Hover to reveal... but only if you’re meant to know 🤫. Hint: Zeus first then Caesar</p>
         </div>
       </div>
     </>
