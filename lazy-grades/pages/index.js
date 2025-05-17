@@ -8,6 +8,7 @@ export default function Home() {
     if (typeof window !== 'undefined') {
         console.log('%cAyo 😳 ki to p roder ici? pena nanier pou trouver', 'color: #f59e0b; font-size: 1.2rem; font-weight: bold;');
         console.log('%cGo study instead. Grades don’t calculate themselves 💅📚', 'color: #84cc16; font-size: 1rem;');
+        console.log('%cTo ene dimoune curieux selman, dm Mr 🌞 if you interested in business. ', 'color: #84cc16; font-size: 1rem;');
     }
   const [rows, setRows] = useState([
     { moduleName: '', weightage: '', marks: '' }
