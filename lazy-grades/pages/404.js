@@ -1,4 +1,5 @@
 // File: pages/404.js
+import '../app/globals.css';
 export default function Custom404() {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center text-center p-6 bg-white text-black dark:bg-gray-900 dark:text-white">
