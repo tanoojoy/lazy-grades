@@ -1,6 +1,7 @@
 // File: pages/index.js
 import { useState } from 'react';
 import { Sun, Moon } from 'lucide-react';
+import '../app/globals.css';
 
 export default function Home() {
   const [rows, setRows] = useState([
