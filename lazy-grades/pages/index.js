@@ -34,15 +34,15 @@ export default function Home() {
   return (
     <div className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'} min-h-screen px-2 py-6 sm:px-4 lg:px-8`}>
       <div className="max-w-6xl mx-auto p-4 sm:p-6 md:p-8 rounded-2xl shadow-2xl relative">
-        <div className="absolute top-4 right-4">
-          {/* <button
+        {/* <div className="absolute top-4 right-4">
+          <button
             onClick={() => setDarkMode(!darkMode)}
             className="p-2 rounded-full bg-gray-600 hover:bg-gray-500 transition-colors"
             aria-label="Toggle dark mode"
           >
             {darkMode ? <Sun size={20} className="text-yellow-300" /> : <Moon size={20} className="text-indigo-800" />}
-          </button> */}
-        </div>
+          </button>
+        </div> */}
 
         <h1 className={`text-2xl sm:text-3xl md:text-4xl font-extrabold mb-4 sm:mb-6 ${darkMode ? 'text-indigo-400' : 'text-indigo-700'}`}>Minimum effort, maximum grades</h1>
 
