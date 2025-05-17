@@ -122,7 +122,7 @@ export default function Home() {
           <p>This app is fully client-side. Your data is never sent or stored anywhere — everything stays on your device. No info is collected, logged, or tracked. We respect your privacy 💯.</p>
         </div>
 
-        <p className={`text-xs mt-6 text-right animate-pulse ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>Made with love ❤️ from CS</p>
+        <p className={`text-xs mt-6 text-right animate-pulse ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>Made with love ❤️ from CS 2023</p>
       </div>
     </div>
   );
