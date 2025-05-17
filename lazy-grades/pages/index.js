@@ -9,7 +9,7 @@ export default function Home() {
   const [rows, setRows] = useState([
     { moduleName: '', weightage: '', marks: '' }
   ]);
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   const handleChange = (index, field, value) => {
     const newRows = [...rows];
