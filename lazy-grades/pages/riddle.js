@@ -34,11 +34,11 @@ export default function Riddle() {
 
       <div className="min-h-screen bg-black text-green-400 flex items-center justify-center px-4 py-12">
         <div className="max-w-xl w-full text-center border border-green-400 p-6 rounded-xl shadow-lg">
-          <h1 className="text-2xl md:text-3xl font-bold mb-4">🧪 Encrypted Challenge</h1>
+        
           <p className="mb-6 text-sm md:text-base whitespace-pre-wrap glitchy obscured">
             {encoded}
           </p>
-          <p className="text-xs mt-6 opacity-70 italic">Hover to reveal... but only if you’re meant to know 🤫</p>
+          <p className="text-xs mt-6 opacity-70 italic">Hover to reveal... but only if you’re meant to know 🤫. Hint: Zeus</p>
         </div>
       </div>
     </>
