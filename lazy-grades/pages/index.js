@@ -51,15 +51,15 @@ export default function Home() {
 
         <div className={`${darkMode ? 'bg-gray-700 text-gray-200 border-indigo-500' : 'bg-indigo-50 text-gray-800 border-indigo-300'} border-l-4 p-4 mb-6 sm:mb-8 rounded-md text-sm sm:text-base`}>
           <p className="mb-2 font-semibold">Just finished your class tests and finished all assignments?</p>
-          <p className="mb-2">Wondering what's the minimum effort you gotta put to receive a grade? We understand (we've been there too).</p>
-          <p>Just input your exam's weightage for grading and your total coursemarks for that module - it will calculate the minimum points required on your exam paper to achieve each grade.</p>
+          <p className="mb-2">Wondering what's the minimum effort you gotta put in exams to receive a grade? We understand (we've been there too).</p>
+          <p>Just input your exam's weightage for grading and your total coursemarks for that module - it will calculate the minimum points (/100) required on your exam paper to achieve each grade.</p>
         </div>
 
         <div className="overflow-x-auto">
           <table className="w-full border-collapse text-xs sm:text-sm">
             <thead className={`${darkMode ? 'bg-indigo-600 text-white' : 'bg-indigo-500 text-white'}`}>
               <tr>
-                {['Module Name', 'Coursework Weightage (%)', 'Coursework Marks', 'Points for A+', 'Points for A', 'Points for B', 'Points for C', 'Points for D'].map((header, i) => (
+                {['Module Name', 'Exam Weightage (%)', 'Coursework Marks', 'Points for A+', 'Points for A', 'Points for B', 'Points for C', 'Points for D'].map((header, i) => (
                   <th key={i} className="p-2 sm:p-3 text-left font-semibold tracking-wide whitespace-nowrap">{header}</th>
                 ))}
               </tr>
