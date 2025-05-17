@@ -68,6 +68,7 @@ export default function Home() {
                   <td className="p-2 sm:p-3">
                     <input
                       type="text"
+                      placeholder='Computational Mathematics'
                       className={`w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400 ${darkMode ? 'bg-gray-900 text-white border-gray-600' : 'bg-white text-black border-gray-300'}`}
                       value={row.moduleName}
                       onChange={(e) => handleChange(index, 'moduleName', e.target.value)}
@@ -76,6 +77,7 @@ export default function Home() {
                   <td className="p-2 sm:p-3">
                     <input
                       type="number"
+                      placeholder='60'
                       className={`w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400 ${darkMode ? 'bg-gray-900 text-white border-gray-600' : 'bg-white text-black border-gray-300'}`}
                       value={row.weightage}
                       onChange={(e) => handleChange(index, 'weightage', e.target.value)}
@@ -84,6 +86,7 @@ export default function Home() {
                   <td className="p-2 sm:p-3">
                     <input
                       type="number"
+                      placeholder='35'
                       className={`w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400 ${darkMode ? 'bg-gray-900 text-white border-gray-600' : 'bg-white text-black border-gray-300'}`}
                       value={row.marks}
                       onChange={(e) => handleChange(index, 'marks', e.target.value)}
