@@ -5,6 +5,10 @@ import { Sun, Moon } from 'lucide-react';
 import '../app/globals.css';
 
 export default function Home() {
+    if (typeof window !== 'undefined') {
+        console.log('%cAyo 😳 ki to p roder ici? pena nanier pou trouver', 'color: #f59e0b; font-size: 1.2rem; font-weight: bold;');
+        console.log('%cGo study instead. Grades don’t calculate themselves 💅📚', 'color: #84cc16; font-size: 1rem;');
+    }
   const [rows, setRows] = useState([
     { moduleName: '', weightage: '', marks: '' }
   ]);
@@ -36,11 +40,23 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Lazy Grades - Minimum Effort, Maximum Grades</title>
-        <meta name="description" content="Input your coursework marks and exam weightage to calculate the minimum effort needed to score your desired grade. A smart calculator for students." />
+        <title>Lazy Grades @ Reduit</title>
+        <meta name="description" content="Aret Panicker pou to resultats. Input your coursework marks and exam weightage to calculate the minimum effort needed to score your desired grade. A smart calculator for students." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content="grade calculator, student marks, coursework, exam weightage, university tool, university of mauritius, uom, UOM, uom grades" />
         <meta name="author" content="CS 2023" />
+
+        
+        <meta property="og:title" content="Minimum Effort, Maximum Grades" />
+        <meta property="og:description" content="Aret Panicker pou to resultats. Quickly calculate the minimum exam scores needed for your desired grades." />
+        <meta property="og:image" content="/gro_paress.png" />
+        <meta property="og:url" content="https://lazygrades.vercel.app" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Minimum Effort, Maximum Grades" />
+        <meta name="twitter:description" content="Aret Panicker pou to resultats. Quickly calculate the minimum exam scores needed for your desired grades." />
+        <meta name="twitter:image" content="/gro_paress.png" />
       </Head>
 
       <div className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'} min-h-screen px-4 py-6 sm:px-6 lg:px-8`}>
