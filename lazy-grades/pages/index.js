@@ -6,7 +6,7 @@ import '../app/globals.css';
 
 export default function Home() {
     if (typeof window !== 'undefined') {
-        console.log('%cAyo 😳 ki to p roder ici? pena nanier pou trouver', 'color: #f59e0b; font-size: 1.2rem; font-weight: bold;');
+        console.log('%cAyo ki to p roder ici? pena nanier pou trouver', 'color: #f59e0b; font-size: 1.2rem; font-weight: bold;');
         console.log('%cGo study instead. Grades don’t calculate themselves 💅📚', 'color: #84cc16; font-size: 1rem;');
         console.log('%cTo ene dimoune curieux selman, dm Mr 🌞 if you interested in business. ', 'color: #84cc16; font-size: 1rem;');
     }
@@ -66,7 +66,7 @@ export default function Home() {
 
           <div className={`${darkMode ? 'bg-gray-700 text-gray-200 border-indigo-500' : 'bg-indigo-50 text-gray-800 border-indigo-300'} border-l-4 p-4 mb-6 sm:mb-8 rounded-md text-sm sm:text-base`}>
             <p className="mb-2 font-semibold">Just finished your class tests and finished all assignments?</p>
-            <p className="mb-2">Wondering what's the minimum effort you gotta put to receive a grade? We understand (we've been there too).</p>
+            <p className="mb-2">Wondering what's the minimum effort you gotta put to receive a grade? We understand (we've been there too)!</p>
             <p>Just input your exam's weightage for grading and your total coursemarks for that module - it will calculate the minimum points required (/100) on your exam paper to achieve each grade.</p>
           </div>
 
