@@ -62,7 +62,7 @@ export default function CPA() {
         {year.map((mod, i) => (
           <div key={i} className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
             <input placeholder="Module Name" value={mod.name} onChange={e => handleChange(setter, i, 'name', e.target.value)} className="border p-2 rounded" />
-            <input placeholder="% Obtained" value={mod.percentage} onChange={e => handleChange(setter, i, 'percentage', e.target.value)} className="border p-2 rounded" type="number" />
+            <input type="range" min="0" max="100" value={mod.percentage || 0} onChange={e => handleChange(setter, i, 'percentage', e.target.value)} className="w-full accent-indigo-600" />
           </div>
         ))}
         <button onClick={() => addRow(setter)} className="mt-2 px-4 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700">+ Add Row</button>
