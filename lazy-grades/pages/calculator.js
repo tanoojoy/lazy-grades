@@ -81,9 +81,9 @@ export default function CPA() {
           <h1 className="text-3xl font-bold mb-6 text-indigo-700">CPA Calculator</h1>
             <div className="border-l-4 p-4 mb-6 sm:mb-8 rounded-md text-sm sm:text-base">
             <p className="mb-2 font-semibold">Finished your exams and want to know your CPA/LPA now?</p>
-            <p className="mb-2"><strong>LPA</strong> can be considered to be your performance for that year only.</p>
-  <p><strong>CPA</strong> is cumulative. Meaning the previous year(s) CPAs will affect the current year you're in. Unfortunately, calculation of CPA is somethinng that requires you to input all your modules' scores to the calculator 1 by 1.</p>
-            <p className="mb-2">Weightages for Year 1 is 1, Year 2 is 3, and Year 3 is 5.</p>
+            <p className="mb-2"><strong>LPA</strong> can be considered to be your performance for that year only</p>
+            <p><strong>CPA</strong> is cumulative. Meaning the previous year(s) CPAs will affect the current year you're in. As you continue to input your marks, your CPA across years will keep getting updated.</p>
+            <p className="mb-2">Weightages for Year 1 is 1, Year 2 is 3, and Year 3 is 5. CPA calculation <strong>requires</strong> you to input all your modules' marks to be accurate.</p>
           </div>
 
           {renderYear('Year 1', year1, setYear1, 1)}
