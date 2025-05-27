@@ -3,7 +3,7 @@ import Head from 'next/head';
 import { useState } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import '../app/globals.css';
-import { Analytics } from "@vercel/analytics/next"
+// import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
     if (typeof window !== 'undefined') {
