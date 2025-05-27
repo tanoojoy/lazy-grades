@@ -78,11 +78,12 @@ export default function CPA() {
 
       <main className="min-h-screen bg-gray-50 text-gray-900 p-6 pb-24">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold mb-6">CPA Calculator</h1>
+          <h1 className="text-3xl font-bold mb-6 text-indigo-700">CPA Calculator</h1>
             <div className="border-l-4 p-4 mb-6 sm:mb-8 rounded-md text-sm sm:text-base">
-            <p className="mb-2 font-semibold">Just finished your class tests and finished all assignments?</p>
-            <p className="mb-2">Wondering what's the minimum effort you gotta put to receive a grade? We understand (we've been there too)!</p>
-            <p>Just input your exam's weightage for grading and your total coursemarks for that module - it will calculate the minimum points required (/100) on your exam paper to achieve each grade.</p>
+            <p className="mb-2 font-semibold">Finished your exams and want to know your CPA/LPA now?</p>
+            <p className="mb-2"><strong>LPA</strong> can be considered to be your performance for that year only.</p>
+  <p><strong>CPA</strong> is cumulative. Meaning the previous year(s) CPAs will affect the current year you're in. Unfortunately, calculation of CPA is somethinng that requires you to input all your modules' scores to the calculator 1 by 1.</p>
+            <p className="mb-2">Weightages for Year 1 is 1, Year 2 is 3, and Year 3 is 5.</p>
           </div>
 
           {renderYear('Year 1', year1, setYear1, 1)}
