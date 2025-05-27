@@ -1,6 +1,7 @@
+// File: pages/cpa.js
 import { useState } from 'react';
-import '../app/globals.css';
 import Head from 'next/head';
+import '../app/globals.css';
 
 export default function CPA() {
   const initRow = () => ({ name: '', percentage: '' });
@@ -59,7 +60,7 @@ export default function CPA() {
           </div>
         </div>
         {year.map((mod, i) => (
-          <div key={i} className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-3">
+          <div key={i} className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
             <input placeholder="Module Name" value={mod.name} onChange={e => handleChange(setter, i, 'name', e.target.value)} className="border p-2 rounded" />
             <input placeholder="% Obtained" value={mod.percentage} onChange={e => handleChange(setter, i, 'percentage', e.target.value)} className="border p-2 rounded" type="number" />
           </div>
