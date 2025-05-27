@@ -79,7 +79,7 @@ export default function CPA() {
       <main className="min-h-screen bg-gray-50 text-gray-900 p-6 pb-24">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold mb-6">CPA Calculator</h1>
-            <div className={`${darkMode ? 'bg-gray-700 text-gray-200 border-indigo-500' : 'bg-indigo-50 text-gray-800 border-indigo-300'} border-l-4 p-4 mb-6 sm:mb-8 rounded-md text-sm sm:text-base`}>
+            <div className="border-l-4 p-4 mb-6 sm:mb-8 rounded-md text-sm sm:text-base">
             <p className="mb-2 font-semibold">Just finished your class tests and finished all assignments?</p>
             <p className="mb-2">Wondering what's the minimum effort you gotta put to receive a grade? We understand (we've been there too)!</p>
             <p>Just input your exam's weightage for grading and your total coursemarks for that module - it will calculate the minimum points required (/100) on your exam paper to achieve each grade.</p>
