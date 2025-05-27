@@ -27,15 +27,15 @@ export default function LandingPage() {
 
       <main className="min-h-screen bg-[#0d0d0d] text-white font-sans flex items-center justify-center p-6">
         <div className="max-w-md w-full bg-[#1a1a1a] border border-neutral-800 rounded-2xl shadow-md p-8 space-y-6">
-          <h1 className="text-2xl sm:text-3xl font-semibold text-center">CS Tools Hub</h1>
+          <h1 className="text-2xl sm:text-3xl font-semibold text-center"> CS Exam Tools</h1>
           <p className="text-neutral-400 text-center text-sm">
-            Your academic shortcuts. Choose a tool to get started.
+            Academic tools exclusively for Computer Science students.
           </p>
 
           <div className="flex flex-col gap-4">
             <Link href="/lazy">
               <div className="w-full bg-white text-black font-medium text-center py-2 rounded-lg hover:bg-neutral-200 transition-all cursor-pointer">
-                Minimum Effort Grade Calculator
+                Lazy Grade Calculator
               </div>
             </Link>
 
@@ -47,7 +47,7 @@ export default function LandingPage() {
           </div>
 
           <div className="pt-4 text-center text-xs text-neutral-500">
-            Portal ready. Let’s get to work.
+            Built by CS for CS
           </div>
         </div>
       </main>

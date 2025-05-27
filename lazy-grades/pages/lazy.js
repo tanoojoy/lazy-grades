@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useState } from 'react';
 import { Sun, Moon } from 'lucide-react';
 import '../app/globals.css';
+import Link from 'next/link';
 
 export default function Home() {
     if (typeof window !== 'undefined') {
@@ -61,13 +62,17 @@ export default function Home() {
       </Head>
 
       <div className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'} min-h-screen px-4 py-6 sm:px-6 lg:px-8`}>
+        <Link href="/" className="inline-block mb-4 text-sm text-indigo-600 hover:underline font-medium">
+          ← Back
+        </Link>
         <div className="max-w-4xl mx-auto p-4 sm:p-6 md:p-8 rounded-2xl shadow-2xl">
           <h1 className={`text-xl sm:text-2xl md:text-3xl font-extrabold mb-4 sm:mb-6 ${darkMode ? 'text-indigo-400' : 'text-indigo-700'}`}>Minimum effort, maximum grades</h1>
 
           <div className={`${darkMode ? 'bg-gray-700 text-gray-200 border-indigo-500' : 'bg-indigo-50 text-gray-800 border-indigo-300'} border-l-4 p-4 mb-6 sm:mb-8 rounded-md text-sm sm:text-base`}>
             <p className="mb-2 font-semibold">Just finished your class tests and finished all assignments?</p>
-            <p className="mb-2">Wondering what's the minimum effort you gotta put to receive a grade? We understand (we've been there too)!</p>
-            <p>Just input your exam's weightage for grading and your total coursemarks for that module - it will calculate the minimum points required (/100) on your exam paper to achieve each grade.</p>
+            <p className="mb-2">Wondering what's the minimum effort you gotta put to receive a grade?</p>
+            <br></br>
+            <p>Example: If the exam weightage of Algorithms and Complexities is 50%, and your coursework marks is 30. Then you will be shown that you need at least a 70/100 on the exam paper to achieve an A.</p>
           </div>
 
           <div className="space-y-6">
@@ -128,6 +133,11 @@ export default function Home() {
           </div>
 
           <p className={`text-xs mt-6 text-right animate-pulse ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>Made with love ❤️ from CS 2023</p>
+        </div>
+        <div className="mt-8 text-center">
+          <Link href="/" className="inline-block text-sm text-indigo-600 hover:underline font-medium">
+            ← Back
+          </Link>
         </div>
       </div>
     </>
