@@ -64,12 +64,12 @@ export default function CPA() {
           <div key={i} className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
             <input placeholder="Module Name" value={mod.name} onChange={e => handleChange(setter, i, 'name', e.target.value)} className="border p-2 rounded" />
             <div className="flex flex-col">
-  <input type="range" min="0" max="100" value={Number(mod.percentage) || 0} onChange={e => handleChange(setter, i, 'percentage', e.target.value)} className="w-full accent-indigo-600" />
-  <span className={`text-sm text-center mt-1 font-medium ${mod.percentage < 40 ? 'text-red-600' : mod.percentage < 60 ? 'text-yellow-600' : 'text-green-700'}`}>{mod.percentage || 0}%</span>
-</div>
+              <span className={`text-sm text-center mt-1 font-medium ${mod.percentage < 40 ? 'text-red-600' : mod.percentage < 60 ? 'text-yellow-600' : 'text-green-700'}`}>{mod.percentage || 0}%</span>
+              <input type="range" min="0" max="100" value={Number(mod.percentage) || 0} onChange={e => handleChange(setter, i, 'percentage', e.target.value)} className="w-full accent-indigo-600" />
+            </div>
           </div>
         ))}
-        <button onClick={() => addRow(setter)} className="mt-2 px-4 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700">+ Add Row</button>
+        <button onClick={() => addRow(setter)} className="mt-2 px-4 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700">+ Add Module</button>
       </div>
     );
   };
@@ -91,11 +91,13 @@ export default function CPA() {
           {renderYear('Year 2', year2, setYear2, 3)}
           {renderYear('Year 3', year3, setYear3, 5)}
 
-          <div className="mt-8 bg-white p-4 rounded shadow">
-            <p className="text-lg font-bold text-indigo-700 mt-2">CPA: {cpa}</p>
-          </div>
         </div>
-            
+        
+        <div className={`mt-10 text-xs sm:text-sm pt-6 border-t ${darkMode ? 'text-gray-400 border-gray-600' : 'text-gray-600 border-gray-300'}`}>
+          <h2 className={`text-sm sm:text-base font-semibold mb-2 ${darkMode ? 'text-white' : 'text-black'}`}>🔐 Privacy Notice</h2>
+          <p>This app is fully client-side. Your data is never sent or stored anywhere — everything stays on your device. No info is collected, logged, or tracked. We respect your privacy 💯.</p>
+        </div>
+        <p className={`text-xs mt-6 text-right animate-pulse ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>Made with love ❤️ from CS 2023</p>
     </main>
     </>
   );
