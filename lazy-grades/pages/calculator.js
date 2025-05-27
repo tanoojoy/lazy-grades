@@ -1,7 +1,7 @@
 // File: pages/cpa.js
 import { useState } from 'react';
+import Head from 'next/head';
 import '../app/globals.css';
-
 
 export default function CPA() {
   const initRow = () => ({ name: '', percentage: '' });
@@ -63,7 +63,7 @@ export default function CPA() {
           <div key={i} className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
             <input placeholder="Module Name" value={mod.name} onChange={e => handleChange(setter, i, 'name', e.target.value)} className="border p-2 rounded" />
             <div className="flex flex-col">
-  <input type="range" min="0" max="100" value={mod.percentage || 0} onChange={e => handleChange(setter, i, 'percentage', e.target.value)} className="w-full accent-indigo-600" />
+  <input type="range" min="0" max="100" value={Number(mod.percentage) || 0} onChange={e => handleChange(setter, i, 'percentage', e.target.value)} className="w-full accent-indigo-600" />
   <span className={`text-sm text-center mt-1 font-medium ${mod.percentage < 40 ? 'text-red-600' : mod.percentage < 60 ? 'text-yellow-600' : 'text-green-700'}`}>{mod.percentage || 0}%</span>
 </div>
           </div>
@@ -76,7 +76,7 @@ export default function CPA() {
   return (
     <>
 
-      <main className="min-h-screen bg-gray-50 text-gray-900 p-6 pb-24">
+       <main className="min-h-screen bg-gray-50 text-gray-900 p-6 pb-24">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold mb-6 text-indigo-700">CPA Calculator</h1>
             <div className="border-l-4 p-4 mb-6 sm:mb-8 rounded-md text-sm sm:text-base">
