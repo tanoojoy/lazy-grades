@@ -93,11 +93,11 @@ export default function CPA() {
 
         </div>
         
-        <div className={`mt-10 text-xs sm:text-sm pt-6 border-t ${darkMode ? 'text-gray-400 border-gray-600' : 'text-gray-600 border-gray-300'}`}>
-          <h2 className={`text-sm sm:text-base font-semibold mb-2 ${darkMode ? 'text-white' : 'text-black'}`}>🔐 Privacy Notice</h2>
+        <div className="mt-10 text-xs sm:text-sm pt-6 border-t text-gray-600 border-gray-300">
+          <h2 className="text-sm sm:text-base font-semibold mb-2 text-black">🔐 Privacy Notice</h2>
           <p>This app is fully client-side. Your data is never sent or stored anywhere — everything stays on your device. No info is collected, logged, or tracked. We respect your privacy 💯.</p>
         </div>
-        <p className={`text-xs mt-6 text-right animate-pulse ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>Made with love ❤️ from CS 2023</p>
+        <p className="text-xs mt-6 text-right animate-pulse text-gray-400">Made with love ❤️ from CS 2023</p>
     </main>
     </>
   );
