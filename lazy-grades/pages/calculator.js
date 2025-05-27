@@ -1,14 +1,16 @@
-// File: pages/cpa.js
 import { useState } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import '../app/globals.css';
-// import { Analytics } from "@vercel/analytics/next"
+
 
 export default function CPA() {
   const initRow = () => ({ name: '', percentage: '' });
   const [year1, setYear1] = useState([initRow()]);
   const [year2, setYear2] = useState([initRow()]);
   const [year3, setYear3] = useState([initRow()]);
+
+  const [darkMode, setDarkMode] = useState(false);
 
   const handleChange = (yearSetter, index, field, value) => {
     yearSetter(prev => {
@@ -76,11 +78,34 @@ export default function CPA() {
   
   return (
     <>
+      <Head>
+        <title>Lazy Grades @ Reduit</title>
+        <meta name="description" content="Aret Panicker pou to resultats. Input your coursework marks and exam weightage to calculate the minimum effort needed to score your desired grade. A smart calculator for students." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="grade calculator, student marks, coursework, exam weightage, university tool, university of mauritius, uom, UOM, uom grades" />
+        <meta name="author" content="CS 2023" />
 
-       <main className="min-h-screen bg-gray-50 text-gray-900 p-6 pb-24">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-3xl font-bold mb-6 text-indigo-700">CPA Calculator</h1>
-            <div className="border-l-4 p-4 mb-6 sm:mb-8 rounded-md text-sm sm:text-base">
+        
+        <meta property="og:title" content="Minimum Effort, Maximum Grades" />
+        <meta property="og:description" content="Aret Panicker pou to resultats. Quickly calculate the minimum exam scores needed for your desired grades." />
+        <meta property="og:image" content="/gro_paress.png" />
+        <meta property="og:url" content="https://lazygrades.vercel.app" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Minimum Effort, Maximum Grades" />
+        <meta name="twitter:description" content="Aret Panicker pou to resultats. Quickly calculate the minimum exam scores needed for your desired grades." />
+        <meta name="twitter:image" content="/gro_paress.png" />
+      </Head>
+
+      <div className={`${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'} min-h-screen px-4 py-6 sm:px-6 lg:px-8`}>
+        <Link href="/" className="inline-block mb-4 text-sm text-indigo-600 hover:underline font-medium">
+          ← Back
+        </Link>
+        <div className="max-w-4xl mx-auto p-4 sm:p-6 md:p-8 rounded-2xl shadow-2xl">
+          <h1 className={`text-xl sm:text-2xl md:text-3xl font-extrabold mb-4 sm:mb-6 ${darkMode ? 'text-indigo-400' : 'text-indigo-700'}`}>CPA Calculator</h1>
+
+          <div className="border-l-4 p-4 mb-6 sm:mb-8 rounded-md text-sm sm:text-base">
             <p className="mb-2 font-semibold">Finished your exams and want to know your CPA/LPA now?</p>
             <p className="mb-2"><strong>LPA</strong> can be considered to be your performance for that year only</p>
             <p><strong>CPA</strong> is cumulative. Meaning the previous year(s) CPAs will affect the current year you're in. As you continue to input your marks, your CPA across years will keep getting updated.</p>
@@ -91,14 +116,19 @@ export default function CPA() {
           {renderYear('Year 2', year2, setYear2, 3)}
           {renderYear('Year 3', year3, setYear3, 5)}
 
+          <div className={`mt-10 text-xs sm:text-sm pt-6 border-t ${darkMode ? 'text-gray-400 border-gray-600' : 'text-gray-600 border-gray-300'}`}>
+            <h2 className={`text-sm sm:text-base font-semibold mb-2 ${darkMode ? 'text-white' : 'text-black'}`}>🔐 Privacy Notice</h2>
+            <p>This app is fully client-side. Your data is never sent or stored anywhere — everything stays on your device. No info is collected, logged, or tracked. We respect your privacy 💯.</p>
+          </div>
+
+          <p className={`text-xs mt-6 text-right animate-pulse ${darkMode ? 'text-gray-500' : 'text-gray-400'}`}>Made with love ❤️ from CS 2023</p>
         </div>
-        
-        <div className="mt-10 text-xs sm:text-sm pt-6 border-t text-gray-600 border-gray-300">
-          <h2 className="text-sm sm:text-base font-semibold mb-2 text-black">🔐 Privacy Notice</h2>
-          <p>This app is fully client-side. Your data is never sent or stored anywhere — everything stays on your device. No info is collected, logged, or tracked. We respect your privacy 💯.</p>
+        <div className="mt-8 text-center">
+          <Link href="/" className="inline-block text-sm text-indigo-600 hover:underline font-medium">
+            ← Back
+          </Link>
         </div>
-        <p className="text-xs mt-6 text-right animate-pulse text-gray-400">Made with love ❤️ from CS 2023</p>
-    </main>
+      </div>
     </>
   );
 }
