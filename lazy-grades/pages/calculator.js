@@ -55,8 +55,8 @@ export default function CPA() {
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
           <h2 className="text-xl font-bold flex-shrink-0">{label}</h2>
           <div className="flex gap-4 text-sm text-indigo-700 font-semibold">
-            <span className="bg-indigo-100 px-3 py-1 rounded">LPA: {lpa}</span>
-            <span className="bg-indigo-100 px-3 py-1 rounded">CPA: {cpa}</span>
+            <input className="bg-indigo-100 px-3 py-1 rounded w-20 text-center font-semibold" value={lpa} onChange={e => { const val = parseFloat(e.target.value); if (!isNaN(val)) setter(prev => prev.map(r => ({ ...r, percentage: val })))} } />
+            <input className="bg-indigo-100 px-3 py-1 rounded w-20 text-center font-semibold" value={cpa} onChange={e => { const val = parseFloat(e.target.value); if (!isNaN(val)) { const totalCredits = totalWeightedCredits / 12; const avgPercent = (val * totalWeightedCredits) / (12 * totalCredits); const allSetters = [setYear1, setYear2, setYear3]; allSetters.forEach(setter => setter(prev => prev.map(r => r.percentage ? r : { ...r, percentage: avgPercent.toFixed(2) }))); } }} />
           </div>
         </div>
         {year.map((mod, i) => (
