@@ -21,6 +21,10 @@ export default function CPA() {
     });
   };
 
+  const removeRow = (yearSetter, index) => {
+    yearSetter(prev => prev.filter((_, i) => i !== index));
+  };
+
   const handleFinalProjectChange = (value) => {
     setFinalProject(prev => ({ ...prev, percentage: value }));
   };
@@ -143,6 +147,12 @@ export default function CPA() {
                 {mod.percentage || 0}%
               </span>
             </div>
+            <button
+              onClick={() => removeRow(setter, i)}
+              className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded hover:bg-red-200 transition"
+            >
+              🗑️ Remove
+            </button>
           </div>
         ))}
 
