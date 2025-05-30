@@ -97,7 +97,7 @@ export default function CPA() {
 
         {extraRow && (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
-            <input value="Final Project" disabled className="border p-2 rounded bg-gray-100 font-semibold" />
+            <input value="Final Year Project" disabled className="border p-2 rounded bg-gray-100 font-semibold" />
             <div className="flex flex-col">
               <input
                 type="range"
