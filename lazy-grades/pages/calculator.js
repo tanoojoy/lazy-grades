@@ -154,12 +154,12 @@ export default function CPA() {
                 {mod.percentage || 0}%
               </span>
             </div>
-            {/* <button
+            <button
               onClick={() => removeRow(setter, i)}
               className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded hover:bg-red-200 transition"
             >
               🗑️ Remove
-            </button> */}
+            </button>
           </div>
         ))}
       </div>
