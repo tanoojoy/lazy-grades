@@ -147,7 +147,7 @@ export default function CPA() {
         ))}
 
         <button onClick={() => addRow(setter)} className="mt-2 px-4 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700">
-          + Add Row
+          + Add Module
         </button>
       </div>
     );
