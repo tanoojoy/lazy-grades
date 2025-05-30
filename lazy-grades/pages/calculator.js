@@ -155,10 +155,11 @@ export default function CPA() {
 
   return (
     <>
+      
+      <main className="min-h-screen bg-gray-50 text-gray-900 p-6 pb-24">
       <Link href="/" className="inline-block mb-4 text-sm text-indigo-600 hover:underline font-medium">
           ← Back
       </Link>
-      <main className="min-h-screen bg-gray-50 text-gray-900 p-6 pb-24">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold mb-6 text-indigo-700">CPA Calculator</h1>
           <div className="border-l-4 p-4 mb-6 sm:mb-8 rounded-md text-sm sm:text-base">
