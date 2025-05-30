@@ -86,7 +86,7 @@ export default function CPA() {
   const renderYear = (label, year, setter, weight, extraRow = null) => {
     const lpa = computeLPA(year, weight, extraRow);
     return (
-      <div className="bg-white p-4 rounded shadow mb-6">
+      <div className="bg-white p-4 rounded shadow mb-6 border-2 border-black border-dashed">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
           <h2 className="text-xl font-bold flex-shrink-0">{label}</h2>
           <div className="flex gap-4 text-sm text-indigo-700 font-semibold">
