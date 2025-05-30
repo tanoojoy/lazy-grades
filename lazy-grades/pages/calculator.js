@@ -21,10 +21,6 @@ export default function CPA() {
     });
   };
 
-  const removeRow = (yearSetter, index) => {
-    yearSetter(prev => prev.filter((_, i) => i !== index));
-  };
-
   const handleFinalProjectChange = (value) => {
     setFinalProject(prev => ({ ...prev, percentage: value }));
   };
@@ -101,7 +97,7 @@ export default function CPA() {
 
         {extraRow && (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
-            <input value="Final Year Project" disabled className="border p-2 rounded bg-gray-100 font-semibold" />
+            <input value="Final Project" disabled className="border p-2 rounded bg-gray-100 font-semibold" />
             <div className="flex flex-col">
               <input
                 type="range"
@@ -124,13 +120,6 @@ export default function CPA() {
 
         {year.map((mod, i) => (
           <div key={i} className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
-            {/* <button
-              onClick={() => removeRow(setter, i)}
-              className="text-red-600 font-bold text-lg px-2 focus:outline-none hover:text-red-800"
-              title="Remove row"
-            >
-              &times;
-            </button> */}
             <input
               placeholder="Module Name"
               value={mod.name}
@@ -154,17 +143,12 @@ export default function CPA() {
                 {mod.percentage || 0}%
               </span>
             </div>
-            <button
-              onClick={() => removeRow(setter, i)}
-              className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded hover:bg-red-200 transition"
-            >
-              🗑️ Remove
-            </button>
-            <button onClick={() => addRow(setter)} className="mt-2 px-4 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700">
-            + Add Module
-          </button>
           </div>
         ))}
+
+        <button onClick={() => addRow(setter)} className="mt-2 px-4 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700">
+          + Add Module
+        </button>
       </div>
     );
   };
