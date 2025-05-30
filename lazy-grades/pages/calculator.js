@@ -124,6 +124,13 @@ export default function CPA() {
 
         {year.map((mod, i) => (
           <div key={i} className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
+            <button
+              onClick={() => removeRow(setter, i)}
+              className="text-red-600 font-bold text-lg px-2 focus:outline-none hover:text-red-800"
+              title="Remove row"
+            >
+              &times;
+            </button>
             <input
               placeholder="Module Name"
               value={mod.name}
@@ -155,10 +162,6 @@ export default function CPA() {
             </button>
           </div>
         ))}
-
-        <button onClick={() => addRow(setter)} className="mt-2 px-4 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700">
-          + Add Module
-        </button>
       </div>
     );
   };
