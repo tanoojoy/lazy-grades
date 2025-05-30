@@ -124,13 +124,13 @@ export default function CPA() {
 
         {year.map((mod, i) => (
           <div key={i} className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-3">
-            <button
+            {/* <button
               onClick={() => removeRow(setter, i)}
               className="text-red-600 font-bold text-lg px-2 focus:outline-none hover:text-red-800"
               title="Remove row"
             >
               &times;
-            </button>
+            </button> */}
             <input
               placeholder="Module Name"
               value={mod.name}
@@ -154,12 +154,12 @@ export default function CPA() {
                 {mod.percentage || 0}%
               </span>
             </div>
-            <button
+            {/* <button
               onClick={() => removeRow(setter, i)}
               className="text-sm bg-red-100 text-red-700 px-3 py-1 rounded hover:bg-red-200 transition"
             >
               🗑️ Remove
-            </button>
+            </button> */}
           </div>
         ))}
       </div>
