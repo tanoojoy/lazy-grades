@@ -154,6 +154,9 @@ export default function CPA() {
 
   return (
     <>
+      <Link href="/" className="inline-block mb-4 text-sm text-indigo-600 hover:underline font-medium">
+          ← Back
+      </Link>
       <main className="min-h-screen bg-gray-50 text-gray-900 p-6 pb-24">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl font-bold mb-6 text-indigo-700">CPA Calculator</h1>
@@ -171,6 +174,11 @@ export default function CPA() {
           <div className="mt-8 bg-white p-4 rounded shadow">
             <p className="text-lg font-bold text-indigo-700 mt-2">CPA: {cpa}</p>
           </div>
+        </div>
+        <div className="mt-8 text-center">
+          <Link href="/" className="inline-block text-sm text-indigo-600 hover:underline font-medium">
+            ← Back
+          </Link>
         </div>
       </main>
     </>
