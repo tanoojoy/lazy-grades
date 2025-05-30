@@ -35,13 +35,13 @@ export default function LandingPage() {
           <div className="flex flex-col gap-4">
             <Link href="/lazy">
               <div className="w-full bg-white text-black font-medium text-center py-2 rounded-lg hover:bg-neutral-200 transition-all cursor-pointer">
-                Lazy Grade Calculator
+                Minimum Exam Effort Calculator
               </div>
             </Link>
 
             <Link href="/calculator">
               <div className="w-full bg-white text-black font-medium text-center py-2 rounded-lg hover:bg-neutral-200 transition-all cursor-pointer">
-                CPA & LPA Tracker
+                CPA Calculator
               </div>
             </Link>
           </div>
