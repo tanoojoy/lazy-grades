@@ -10,7 +10,7 @@ Want to help make **lazy-grades** even lazier (in the best way possible)? Here's
 2. **Clone Your Fork**
    - Open your terminal and run:
      ```bash
-     git clone https://github.com/your-username/lazy-grades.git
+     git clone https://github.com/tanoojoy/lazy-grades.git
      cd lazy-grades
      ```
 
