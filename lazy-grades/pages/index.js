@@ -29,13 +29,13 @@ export default function LandingPage() {
         <div className="max-w-md w-full bg-[#1a1a1a] border border-neutral-800 rounded-2xl shadow-md p-8 space-y-6">
           <h1 className="text-2xl sm:text-3xl font-semibold text-center"> CS Exam Tools</h1>
           <p className="text-neutral-400 text-center text-sm">
-            Academic tools exclusively for Computer Science students.
+            Academic tools exclusively for Computer Science students (May be accurate for other courses but don't take our word for it).
           </p>
 
           <div className="flex flex-col gap-4">
             <Link href="/lazy">
               <div className="w-full bg-white text-black font-medium text-center py-2 rounded-lg hover:bg-neutral-200 transition-all cursor-pointer">
-                Minimum Exam Effort Calculator
+                Minimum Effort Maximum Results
               </div>
             </Link>
 

@@ -1,8 +1,8 @@
-## ✨ How to Contribute (Pull Request Style)
+## How to Contribute
 
-Yo! Wanna help make **lazy-grades** even lazier (in the best way possible)? Here's how you can jump in:
+Want to help make **lazy-grades** even lazier (in the best way possible)? Here's how you can jump in:
 
-### 🛠️ Step-by-Step Guide
+### Step-by-Step Guide
 
 1. **Fork the Repo**
    - Hit that **Fork** button on the top right of this page. This creates your own copy of the project.
@@ -21,7 +21,11 @@ Yo! Wanna help make **lazy-grades** even lazier (in the best way possible)? Here
      ```
 
 4. **Make Your Changes**
-   - Code your magic! Whether it's fixing bugs, adding features, or improving docs.
+   - Code your magic! Whether it's fixing bugs, adding features, or improving docs. Commands to set up a development build, in that order:
+   - `cd lazy-grades`
+   - `npm install`
+   - `npm run dev`
+   - Saving changes to code will auto refresh your localhost
 
 5. **Commit Your Changes**
    - Save your work with meaningful messages:
@@ -41,14 +45,14 @@ Yo! Wanna help make **lazy-grades** even lazier (in the best way possible)? Here
    - Click on **Compare & pull request**.
    - Fill in the details and submit!
 
-### 📌 Tips for a Smooth PR
+### Tips for a Smooth PR
 
 - **Be Descriptive**: Clearly explain what your PR does.
 - **Link Issues**: If you're addressing an issue, mention it like `Closes #issue-number`.
 - **Keep It Focused**: One PR per feature or fix.
 - **Stay Updated**: If the main repo updates, sync your fork to avoid conflicts.
 
-### 🤝 After Submission
+### After Submission
 
 - We'll review your PR ASAP.
 - Be open to feedback and ready to make tweaks.
