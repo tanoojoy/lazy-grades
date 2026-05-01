@@ -7,14 +7,14 @@ export default function LandingPage() {
     <>
       <Head>
         <title>Lazy Grades @ Reduit</title>
-        <meta name="description" content="Aret Panicker pou to resultats. Input your coursework marks and exam weightage to calculate the minimum effort needed to score your desired grade. A smart calculator for students." />
+        <meta name="description" content="Input your coursework marks and exam weightage to calculate the minimum effort needed to score your desired grade. A smart calculator for students." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="keywords" content="grade calculator, student marks, coursework, exam weightage, university tool, university of mauritius, uom, UOM, uom grades" />
         <meta name="author" content="CS 2023" />
 
         
         <meta property="og:title" content="Minimum Effort, Maximum Grades" />
-        <meta property="og:description" content="Aret Panicker pou to resultats. Quickly calculate the minimum exam scores needed for your desired grades." />
+        <meta property="og:description" content="Quickly calculate the minimum exam scores needed for your desired grades." />
         <meta property="og:image" content="/gro_paress.png" />
         <meta property="og:url" content="https://lazygrades.vercel.app" />
         <meta property="og:type" content="website" />
@@ -42,6 +42,12 @@ export default function LandingPage() {
             <Link href="/calculator">
               <div className="w-full bg-white text-black font-medium text-center py-2 rounded-lg hover:bg-neutral-200 transition-all cursor-pointer">
                 CPA Calculator
+              </div>
+            </Link>
+
+            <Link href="https://mooneth.vercel.app/">
+              <div className="w-full bg-white text-black font-medium text-center py-2 rounded-lg hover:bg-neutral-200 transition-all cursor-pointer">
+                Database ERD and B+ Tree
               </div>
             </Link>
           </div>
