@@ -2,6 +2,12 @@ import Link from 'next/link';
 import Head from 'next/head';
 import '../app/globals.css';
 
+const contributors = [
+  { name: 'Munazir Ramjhun', linesAdded: 6892 },
+  { name: 'Tanoo Joyekurun', linesAdded: 10781 }
+];
+
+
 export default function LandingPage() {
   return (
     <>
@@ -55,6 +61,24 @@ export default function LandingPage() {
           <div className="pt-4 text-center text-xs text-neutral-500">
             Built by CS for CS
           </div>
+          <section className="pt-2">
+            <h2 className="text-sm font-semibold uppercase tracking-wider text-neutral-300 mb-3">
+              Contributors
+            </h2>
+            <div className="space-y-2">
+              {contributors.map((contributor) => (
+                <div
+                  key={contributor.name}
+                  className="flex items-center justify-between rounded-lg border border-neutral-800 bg-[#121212] px-3 py-2"
+                >
+                  <span className="text-sm text-neutral-100">{contributor.name}</span>
+                  <span className="text-xs font-medium text-emerald-300">
+                    +{contributor.linesAdded} LOC
+                  </span>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
       </main>
     </>
