@@ -69,10 +69,12 @@ export default function Home() {
           <h1 className={`text-xl sm:text-2xl md:text-3xl font-extrabold mb-4 sm:mb-6 ${darkMode ? 'text-indigo-400' : 'text-indigo-700'}`}>Minimum effort, maximum grades</h1>
 
           <div className={`${darkMode ? 'bg-gray-700 text-gray-200 border-indigo-500' : 'bg-indigo-50 text-gray-800 border-indigo-300'} border-l-4 p-4 mb-6 sm:mb-8 rounded-md text-sm sm:text-base`}>
-            <p className="mb-2 font-semibold">Just finished your class tests and finished all assignments?</p>
-            <p className="mb-2">Wondering what's the minimum effort you gotta put to receive a grade?</p>
+            <p className="mb-2 font-semibold">Coursework marks greatly affects the amount of effort you need to put in exams.</p>
+            <p className="mb-2">Want an A? What's the minimum effort you gotta put to receive it - given you got 30% of your coursemark?</p>
             <br></br>
-            <p>Example: If the exam weightage of Algorithms and Complexities is 50%, and your coursework marks is 30. Then you will be shown that you need at least a 70/100 on the exam paper to achieve an A.</p>
+            <p>Example: If the exam weightage of Algorithms and Complexities is 50%, and your coursework marks is 30 - you will see that you need <strong>at least</strong> a 80/100 on the exam paper to achieve an A.</p>
+            <br></br>
+            <p>Module name is optional and is just for you to track multiple modules in 1 view.</p>
           </div>
 
           <div className="space-y-6">
@@ -87,14 +89,14 @@ export default function Home() {
                 />
                 <input
                   type="number"
-                  placeholder='Exam Weightage (%)'
+                  placeholder='Exam Weightage (if your exam is worth 60% of your grade, type 60)'
                   className={`w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 ${darkMode ? 'bg-gray-900 text-white border-gray-600' : 'bg-white text-black border-gray-300'}`}
                   value={row.weightage}
                   onChange={(e) => handleChange(index, 'weightage', e.target.value)}
                 />
                 <input
                   type="number"
-                  placeholder='Coursework Marks'
+                  placeholder='Total Coursework Marks, e.g 30'
                   className={`w-full p-2 border rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-indigo-400 ${darkMode ? 'bg-gray-900 text-white border-gray-600' : 'bg-white text-black border-gray-300'}`}
                   value={row.marks}
                   onChange={(e) => handleChange(index, 'marks', e.target.value)}
