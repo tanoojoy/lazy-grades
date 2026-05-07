@@ -112,7 +112,20 @@ export default function CPA() {
                 extraRow.percentage < 60 ? 'text-yellow-600' :
                 'text-green-700'
               }`}>
-                {extraRow.percentage || 0}%
+                {
+                  extraRow.percentage == 0 ? `${extraRow.percentage || 0}%` :
+                  extraRow.percentage < 40
+                  ? `${extraRow.percentage}%: F`
+                  : extraRow.percentage < 50
+                  ? `${extraRow.percentage}%: D`
+                  : extraRow.percentage < 60
+                  ? `${extraRow.percentage}%: C`
+                  : extraRow.percentage < 70
+                  ? `${extraRow.percentage}%: B`
+                  : extraRow.percentage < 80
+                  ? `${extraRow.percentage}%: A`
+                  : `${extraRow.percentage}%: A+`
+                  }
               </span>
             </div>
           </div>
@@ -140,7 +153,20 @@ export default function CPA() {
                 mod.percentage < 60 ? 'text-yellow-600' :
                 'text-green-700'
               }`}>
-                {mod.percentage || 0}%
+                {
+                  mod.percentage == 0 ? `${mod.percentage || 0}%` :
+                  mod.percentage < 40
+                  ? `${mod.percentage}%: F`
+                  : mod.percentage < 50
+                  ? `${mod.percentage}%: D`
+                  : mod.percentage < 60
+                  ? `${mod.percentage}%: C`
+                  : mod.percentage < 70
+                  ? `${mod.percentage}%: B`
+                  : mod.percentage < 80
+                  ? `${mod.percentage}%: A`
+                  : `${mod.percentage}%: A+`
+                }
               </span>
             </div>
           </div>
